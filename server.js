@@ -39,5 +39,5 @@ io.on('connection',(socket) => {
 
 });
 
-httpserver.listen(PORT,(err) => err ? console.err('Error establishing the connection') : console.info('Connection established successfully!'));
+httpserver.listen(PORT,"0.0.0.0",(err) => err ? console.err('Error establishing the connection') : console.info('Connection established successfully!'));
 
