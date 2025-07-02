@@ -7,7 +7,7 @@ import {SetA,SetB,SetC,SetD,SetE,SetF} from './Quest/AlvlQuizQuestions.js';
 const App = express();
 const httpserver = http.createServer(App);
 const io = new Server(httpserver, { cors: {
-	origin: ['https://localhost:5173','*','https://neilit.netlify.app','https://nerdify.srcbay.com'],
+	origin: ['https://neilit.netlify.app','https://nerdify.srcbay.com'],
 	methods: ['GET','POST', 'PUT'],
 	credentials: true
 }});
@@ -15,7 +15,7 @@ const io = new Server(httpserver, { cors: {
 
 App.use(express.json());
 App.use(cors({
-	origin: ['https://localhost:5173','*','https://neilit.netlify.app','https://nerdify.srcbay.com'],
+	origin: ['https://neilit.netlify.app','https://nerdify.srcbay.com'],
 	methods : ['GET', 'POST', 'PUT'],
 	credentials: true
 }));
