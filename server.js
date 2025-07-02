@@ -7,7 +7,7 @@ import {SetA,SetB,SetC,SetD,SetE,SetF} from './Quest/AlvlQuizQuestions.js';
 const App = express();
 const httpserver = http.createServer(App);
 const io = new Server(httpserver, { cors: {
-	origin: 'http://localhost:5173',
+	origin: ['https://neilit.netlify.app','https://nielit.srcbay.com'],
 	methods: ['GET','POST', 'PUT'],
 	credentials: true
 }});
@@ -15,7 +15,7 @@ const io = new Server(httpserver, { cors: {
 
 App.use(express.json());
 App.use(cors({
-	origin: 'http://localhost:5173',
+	origin: 'https://nielit.srcbay.com',
 	methods : ['GET', 'POST', 'PUT'],
 	credentials: true
 }));
@@ -24,7 +24,7 @@ App.get("/ques",(req,res) => {
 	res.json(SetA());
 });
 
-const PORT = 5172;
+const PORT = process.env.PORT || 5172;
 
 io.on('connection',(socket) => {
 	console.info(`User ${socket.id} connected!`);
@@ -39,5 +39,5 @@ io.on('connection',(socket) => {
 
 });
 
-httpserver.listen(PORT,"0.0.0.0",(err) => err ? console.err('Error establishing the connection') : console.info('Connection established successfully!'));
+httpserver.listen(PORT,(err) => err ? console.err('Error establishing the connection') : console.info('Connection established successfully!'));
 
