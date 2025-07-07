@@ -153,7 +153,7 @@ export function quesSet(){
   "Discuss about various basic file permissions.",
   "What is Belady’s anomaly in page replacement algorithms?",
   "What is an Opcode in Addressing mode?",
-  "What is an Operand in Addressing mode?"
+  "What is an Operand in Addressing mode?",
   "Explain the difference between a process and a thread.",
   "Describe the various types of registers used in a basic computer.",
   "What is the significance of the Program Counter (PC) register?",
