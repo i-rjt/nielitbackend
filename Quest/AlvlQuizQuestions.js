@@ -1,4 +1,4 @@
-export function SetA(){
+export function SetAA(){
 return [
   {
     "question": "Which of the following is a key difference between UNIX and Windows based operating systems?",
@@ -416,7 +416,7 @@ return [
       "A process that runs in the background without a controlling terminal."
     ],
     "correct_answer": "A process that has completed execution but its entry remains in the process table because its parent has not yet read its exit status.",
-    "explanation": "A zombie process (also known as a defunct process) is a process that has completed its execution, but its entry still exists in the process table because the parent process has not yet called wait() to retrieve its exit status. The text asks 'Explain Zombie process, Orphan process and Daemon process in terms of UNIX.' [cite: 100]"
+    "explanation": "A zombie process (also known as a defunct process) is a process that has completed its execution, but its entry still exists in the process table because the parent process has not yet called waitA() to retrieve its exit status. The text asks 'Explain Zombie process, Orphan process and Daemon process in terms of UNIX.' [cite: 100]"
   },
   {
     "question": "What is the primary function of piping in Linux?",
@@ -564,7 +564,7 @@ return [
 	];
 }
 
-export function SetB(){
+export function SetBA(){
 return[
   {
     "question": "What is the primary benefit of using biased representation for the exponent portion of a floating-point number?",
@@ -1085,8 +1085,7 @@ return[
   }
 ]
 }
-
-export function SetC(){
+export function SetCA(){
 return [
   {
     "question": "What is the key characteristic of an 'Orphan process' in UNIX?",
@@ -1576,7 +1575,7 @@ return [
 
 }
 
-export function SetD(){
+export function SetDA(){
 return [
   {
     "question": "What is the primary role of the '/home' directory in a Linux file system?",
@@ -2044,7 +2043,7 @@ return [
 
 }
 
-export function SetE(){
+export function SetEA(){
 return[
   {
     "question": "What is the function of the 'wc' command in Linux?",
@@ -2352,13 +2351,13 @@ return[
       "A process that is running in the background without a controlling terminal."
     ],
     "correct_answer": "A process that has completed its execution but its entry is still in the process table, waiting for its parent to read its exit status.",
-    "explanation": "A zombie process is a process that has finished its execution but still has an entry in the process table because its parent process has not yet called `wait()` or `waitpid()` to retrieve its exit status. It consumes minimal system resources but its process ID is still occupied."
+    "explanation": "A zombie process is a process that has finished its execution but still has an entry in the process table because its parent process has not yet called `waitA()` or `waitpidA()` to retrieve its exit status. It consumes minimal system resources but its process ID is still occupied."
   }
 ];
 
 }
 
-export function SetF(){
+export function SetFA(){
 return[
   {
     "question": "What is the function of the 'wc' command in Linux?",
@@ -2666,7 +2665,7 @@ return[
       "A process that is running in the background without a controlling terminal."
     ],
     "correct_answer": "A process that has completed its execution but its entry is still in the process table, waiting for its parent to read its exit status.",
-    "explanation": "A zombie process is a process that has finished its execution but still has an entry in the process table because its parent process has not yet called `wait()` or `waitpid()` to retrieve its exit status. It consumes minimal system resources but its process ID is still occupied."
+    "explanation": "A zombie process is a process that has finished its execution but still has an entry in the process table because its parent process has not yet called `waitA()` or `waitpidA()` to retrieve its exit status. It consumes minimal system resources but its process ID is still occupied."
   }
 ];
 
