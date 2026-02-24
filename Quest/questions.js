@@ -1,4 +1,4 @@
-export function SetAA(){
+export function SetA(){
 return [
   {
     "question": "Which of the following is a key difference between UNIX and Windows based operating systems?",
