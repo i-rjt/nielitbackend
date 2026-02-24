@@ -9,18 +9,18 @@ const App = express();
 const server = http.createServer(App);
 const io = new Server(server,{
 	cors:{
-		origin: ['*',"https://neilit.netlify.app"],
+		origin: ["https://neilit.netlify.app","*"],
 		methods: ['GET','POST'],
 		credentials: true
          }
 });
 
 App.use(cors({
-	origin: ["*","https://neilit.netlify.app"],
+	origin: ["https://neilit.netlify.app","*"],
 	methods: ["GET","POST"]
 }));
 
-const PORT = process.env.PORT | 5172;
+const PORT = process.env.PORT;
 
 io.on('connection',(socket) => {
         console.info(`User ${socket.id} connected!`);
